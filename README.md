@@ -1,7 +1,12 @@
 # \<ark-reader\>
 
 Online Display of data extracted from ark save games
+查看恐龙的信息
 
+提取信息
+```
+java -jar ark-tools.jar tamed /home/steam/ARK/ShooterGame/Saved/SavedArks/TheIsland.ark /var/www/html/data/
+```
 ## 克隆
 ```
 $ git clone git@github.com:kdaye/ark-tools-web.git
@@ -51,3 +56,5 @@ Your application is already set up to be tested via [web-component-tester](https
 ```
 $ polymer serve build/default --hostname 0.0.0.0
 ```
+## Nginx
+复制 `buid/default/*` 到 `/var/www/html`
