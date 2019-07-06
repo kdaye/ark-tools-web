@@ -70,7 +70,7 @@
         <app-header fixed>
           <app-toolbar>
             <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
-            <div title>Q's Ark Reader</div>
+            <div title>姜沉鱼的部落恐龙查看器</div>
           </app-toolbar>
         </app-header>
         <iron-data-table data-source="[[dataSource]]" before-cell-bind="[[_boundBeforeCellBind]]">
@@ -79,34 +79,34 @@
 
             </div>
           </template>
-          <data-table-column name="Level" sort-by="fullLevel" width="60px" flex="0">
+          <data-table-column name="等级Lv." sort-by="fullLevel" width="60px" flex="0">
             <template><iron-icon icon="[[_genderIcon(item)]]" style="margin-right:4px"></iron-icon><span style="text-align:center; flex:1;">[[_level(item)]]</span></template>
           </data-table-column>
-          <data-table-column name="Name" sort-by="name">
+          <data-table-column name="名称" sort-by="name">
             <template>[[item.name]]</template>
           </data-table-column>
-          <data-table-column name="Lat" width="40px" flex="0">
+          <data-table-column name="经度" width="40px" flex="0">
             <template>[[item.lat]]</template>
           </data-table-column>
-          <data-table-column name="Lon" width="40px" flex="0">
+          <data-table-column name="维度" width="40px" flex="0">
             <template>[[item.lon]]</template>
           </data-table-column>
-          <data-table-column name="Leben" breeding sort-by="wildLevels.health" width="62px" flex="0">
+          <data-table-column name="血量" breeding sort-by="wildLevels.health" width="62px" flex="0">
             <template>[[item.wildLevels.health]]</template>
           </data-table-column>
-          <data-table-column name="Ausdauer" breeding sort-by="wildLevels.stamina" width="80px" flex="0">
+          <data-table-column name="耐力" breeding sort-by="wildLevels.stamina" width="80px" flex="0">
             <template>[[item.wildLevels.stamina]]</template>
           </data-table-column>
-          <data-table-column name="Sauerstoff" breeding sort-by="wildLevels.oxygen" width="85px" flex="0">
+          <data-table-column name="氧气" breeding sort-by="wildLevels.oxygen" width="85px" flex="0">
             <template>[[item.wildLevels.oxygen]]</template>
           </data-table-column>
-          <data-table-column name="Nahrung" breeding sort-by="wildLevels.food" width="74px" flex="0">
+          <data-table-column name="食物" breeding sort-by="wildLevels.food" width="74px" flex="0">
             <template>[[item.wildLevels.food]]</template>
           </data-table-column>
-          <data-table-column name="Gewicht" breeding sort-by="wildLevels.weight" width="72px" flex="0">
+          <data-table-column name="重量" breeding sort-by="wildLevels.weight" width="72px" flex="0">
             <template>[[item.wildLevels.weight]]</template>
           </data-table-column>
-          <data-table-column name="Nahkampf" breeding sort-by="wildLevels.melee" width="84px" flex="0">
+          <data-table-column name="乱斗" breeding sort-by="wildLevels.melee" width="84px" flex="0">
             <template>[[item.wildLevels.melee]]</template>
           </data-table-column>
         </iron-data-table>
