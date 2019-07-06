@@ -86,10 +86,10 @@
             <template>[[item.name]]</template>
           </data-table-column>
           <data-table-column name="经度" width="40px" flex="0">
-            <template>[[item.wildLevels.lat]]</template>
+            <template>[[item.lat]]</template>
           </data-table-column>
           <data-table-column name="维度" width="40px" flex="0">
-            <template>[[item.wildLevels.lon]]</template>
+            <template>[[item.lon]]</template>
           </data-table-column>
           <data-table-column name="血量" breeding sort-by="wildLevels.health" width="62px" flex="0">
             <template>[[item.wildLevels.health]]</template>
@@ -161,7 +161,7 @@
           if (typeof a.fullLevel === 'undefined') {
             a.fullLevel = a.baseLevel
           }
-          ["lat","lon","health","stamina","oxygen","food","weight","melee"].forEach(function(f){
+          ["health","stamina","oxygen","food","weight","melee"].forEach(function(f){
             if (typeof a.wildLevels[f] === 'undefined') {
               a.wildLevels[f] = 0
             }
