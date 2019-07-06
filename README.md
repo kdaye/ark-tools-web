@@ -2,6 +2,11 @@
 
 Online Display of data extracted from ark save games
 
+## 克隆
+```
+$ git clone git@github.com:kdaye/ark-tools-web.git
+```
+
 ## Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
@@ -12,6 +17,10 @@ First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polyme
 $ polymer serve
 ```
 
+## 解决依赖
+```
+$ polymer install
+```
 ## Building Your Application
 
 ```
