@@ -3,24 +3,20 @@
 Online Display of data extracted from ark save games
 查看恐龙的信息
 
-提取信息
+## 前置要求
+### 下载ark-tools（ https://github.com/Qowyn/ark-tools ）
+提取存档信息
 ```
-java -jar ark-tools.jar tamed /home/steam/ARK/ShooterGame/Saved/SavedArks/TheIsland.ark /var/www/html/data/
+$ java -jar ark-tools.jar tamed /home/steam/ARK/ShooterGame/Saved/SavedArks/TheIsland.ark /var/www/html/data/
 ```
-## 克隆
+### 克隆
 ```
 $ git clone git@github.com:kdaye/ark-tools-web.git
 ```
-
-## Install the Polymer-CLI
+### Install the Polymer-CLI
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your application locally.
 
-## Viewing Your Application
-
-```
-$ polymer serve
-```
 
 ## 解决依赖
 ```
@@ -41,6 +37,12 @@ from:
 
 ```
 $ polymer serve build/bundled
+```
+
+## Viewing Your Application
+
+```
+$ polymer serve
 ```
 
 ## Running Tests
